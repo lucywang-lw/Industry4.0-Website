@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
+import logoNoText from '../resources/logo/i4-logo-notext.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
     <nav className='navbar'>
         <div className='navbar-container'>
             <Link to='/' className='navbar-logo'>
-                Industry 4.0
+              <img class="logo" src={logoNoText} alt="logo" />
             </Link>
             <i className='menu-icon fas fa-bars' onClick={toggleShow} />
             <ul id='nav-menu' className={click ? 'nav-menu active' : 'nav-menu'}>

@@ -11,6 +11,10 @@
   top: 0;
 }
 
+.logo {
+  width: 3em;
+}
+
 .navbar-container {
   display: flex;
   align-items: center;
