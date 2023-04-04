@@ -1,0 +1,30 @@
+#intro-section {
+    background: linear-gradient(157deg, rgba(36,2,87,1) 0%, rgba(63,2,152,1) 52%, rgba(145,162,232,1) 100%);
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+#about-section {
+    background: white;
+    height: 50em;
+}
+
+#about-section h1 {
+    color:  rgba(63,2,152,1);
+    margin-top: 150px;
+}
+
+.left-title {
+    margin-left: 10%;
+}
+
+.right-title {
+    margin-left: 70%;
+}
