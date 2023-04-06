@@ -6,4 +6,4 @@ function Faq() {
   )
 }
 
-export default Faq
+ex
