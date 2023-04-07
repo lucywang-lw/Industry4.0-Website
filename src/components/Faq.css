@@ -1,0 +1,62 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.faq-components {
+  width: 100%;
+  padding: 15px;
+  margin-left: 20px;
+  display: grid;
+}
+/* this .faq block changes styling when screen size is narrower*/
+.faq {
+  border: solid black 2px;
+  margin: 20px;
+  border-radius: 20px;
+  height:80px;
+  margin-right: 100px;
+}
+.faq:hover{
+  box-shadow: 0 0 12px yellow;
+}
+.faq-answer {
+  margin-bottom: 80px;
+}
+.faq-heading {
+  font-size: 30px;
+  padding-right: 30px;
+  position: relative;
+  padding-left: 15px;
+  display: inline;
+}
+.faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+.faqopen .faq-single-component {
+  margin-bottom: 15px;
+}
+.faqopen .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+.faq-arrow {
+  display: inline;
+}
+.faqopen {
+  border: solid blue 2px; /* temp color to identify which is open */
+  margin: 20px;
+  border-radius: 20px;
+  height:90px;
+  margin-right: 100px;
+}
+@media only screen and (min-width: 1300px) {
+  .faq-components {
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq{
+  height:70px;
+  }
+}
