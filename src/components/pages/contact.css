@@ -1,0 +1,58 @@
+.links{
+    background: lightblue;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: medium;
+}
+
+div a:after{
+    content:"";
+    display:block;
+    height: 0;
+    width: 1px;
+}
+
+.social-head{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.contact{
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-align: center;
+}
+
+.text{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.labels{
+    display:inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: large;
+    text-align: right;
+}
+
+.form-labels{
+    font-family: "Montserrat";
+    padding-left: 20px;
+    padding-top: 20px;
+    display:block
+}
+
+.form-input{
+    padding: 10px;
+    width: 400px;
+    margin-left: 20px;
+    display:block;
+    border-width: 1px;
+    border-radius: 10px;
+}
