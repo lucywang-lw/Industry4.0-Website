@@ -5,7 +5,6 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 function Faqitem({ faq, index, faqtoggle }) {
   return (
     <div  className = { "faq" + (faq.open ? 'open': '')} 
-          key = {index} 
           onClick={() => faqtoggle(index)}>
       <div className = "faq-heading">
         {faq.heading}

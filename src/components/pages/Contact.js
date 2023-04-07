@@ -41,17 +41,17 @@ function Contact() {
         <div class = "links">
           <div>
             <a href = "https://www.youtube.com/watch?v=U3w0NjYbEIo"> 
-              <i class="fas fa fa-youtube-play fa-3x" style = {{color: "#dc143c", paddingLeft: "20px",paddingBottom: "15px" ,paddingTop: "8px"}}></i>
+              <i className="fas fa fa-youtube-play fa-3x" style = {{color: "#dc143c", paddingLeft: "20px",paddingBottom: "15px" ,paddingTop: "8px"}}></i>
               <p class = "labels">Youtube</p>
             </a>
             
             <a href = "https://www.instagram.com/i4competition/"> 
-              <i class="fas fa fa-instagram fa-3x" style = {{color: "#f08080", paddingLeft: "26px"}}></i> 
+              <i className="fas fa fa-instagram fa-3x" style = {{color: "#f08080", paddingLeft: "26px"}}></i> 
               <p class = "labels" style = {{paddingLeft: "26px"}}>Instagram</p>
             </a>
             
             <a href = "https://www.gmail.com"> 
-              <i class="fas fa fa-google fa-3x" style = {{color: "#6495ed", paddingLeft: "25px",paddingTop: "17px"}}></i>
+              <i className="fas fa fa-google fa-3x" style = {{color: "#6495ed", paddingLeft: "25px",paddingTop: "17px"}}></i>
               <p class = "labels" style = {{paddingLeft: "24px"}}>i4@gmail.com</p>
             </a>
             

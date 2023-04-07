@@ -7,7 +7,7 @@ function Faq() {
       {
         heading: "question 1",
         answer: "I4 IS A COMPETETION DESIGN TEAM AT THE UNIVERSITY OF WATERLOO MORE TEXT MORE TEXT MORE TEXT",
-        open: true
+        open: false
       },
       {
         heading: "question 2",
@@ -17,7 +17,7 @@ function Faq() {
       {
         heading: "question 3",
         answer: "I4 IS A COMPETETION DESIGN TEAM AT THE UNIVERSITY OF WATERLOO MORE TEXT MORE TEXT MORE TEXT",
-        open: true
+        open: false
       },
       {
         heading: "question 4",
@@ -50,17 +50,19 @@ function Faq() {
         faq.open = false;
       }
 
+      console.log("faq.open: ", i, "     ",  faq.open)
+
       return faq;
     } ) )
   }
   //loops through list of faqs to create individual components
   return (
     <div>
-      <h1 > Frequently Asked Questions</h1>
+      <h1> Frequently Asked Questions</h1>
       <div className = "faq-components">
-        {faqs.map((faq,index) => (
-          <div>
-          <Faqitem faq = {faq} index = {index} faqtoggle = {faqtoggle}/>
+        {faqs.map((faq, index) => (
+          <div key={index}>
+          <Faqitem faq={faq} index={index} faqtoggle={faqtoggle}/>
           </div>
         ))}
       </div>
