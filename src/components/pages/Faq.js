@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Faqitem from '../FaqItem';
-import "../Faq.css";
+import "./Faq.css";
 function Faq() {
   //list of faqs, mapped later
   const [faqs, faqstate] = useState([
@@ -49,16 +49,14 @@ function Faq() {
       else {
         faq.open = false;
       }
-
-      console.log("faq.open: ", i, "     ",  faq.open)
-
       return faq;
     } ) )
   }
   //loops through list of faqs to create individual components
   return (
-    <div>
-      <h1> Frequently Asked Questions</h1>
+    <div className='faq-page'>
+      <br></br>
+      <h1 className='title'>Frequently Asked Questions</h1>
       <div className = "faq-components">
         {faqs.map((faq, index) => (
           <div key={index}>

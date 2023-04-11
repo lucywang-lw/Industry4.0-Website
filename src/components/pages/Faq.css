@@ -1,0 +1,28 @@
+.faq-page {
+  background: linear-gradient(157deg, rgba(145,162,232,1) 0%, rgb(95, 32, 189) 54%, rgba(63,2,152,1) 100%);
+  min-height: 100vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.faq-components {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 3em;
+  padding-bottom: 4em;
+}
+
+.faqopen .faq-single-component {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+  .faq-components {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+ 
