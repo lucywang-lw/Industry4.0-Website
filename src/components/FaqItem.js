@@ -1,17 +1,18 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import './FaqItem.css'
 
 function Faqitem({ faq, index, faqtoggle }) {
   return (
-    <div  className = { "faq" + (faq.open ? 'open': '')} 
+    <div className = { "test faq " + (faq.open ? 'faqopen': 'faqclosed')} 
           onClick={() => faqtoggle(index)}>
       <div className = "faq-heading">
         {faq.heading}
+        <span className= "faq-arrow">
+         <FontAwesomeIcon icon={faq.open ? faAngleUp : faAngleDown} />
+        </span>
       </div>
-        <div className= "faq-arrow">
-          <FontAwesomeIcon icon={faArrowDown} />
-        </div>
       <div className = "faq-answer">
         {faq.answer}
       </div>
