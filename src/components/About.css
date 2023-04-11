@@ -19,11 +19,6 @@
     align-items: flex-end;
 }
 
-.title {
-    color: white;
-    font-size: 3em;
-}
-
 .description {
     font-size: 1em;
     color: #F6D268;
