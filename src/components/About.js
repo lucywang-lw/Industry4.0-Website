@@ -1,18 +1,29 @@
 import React from 'react'
 import "./About.css"
-
+import logoNoText from '../resources/logo/i4-logo-notext.png'
+import IntroSvg from '../resources/images/about.svg'
 function About() {
   return (
     <div id="about-page">
       <div id="intro-section">
-         <h1 class="title">Industry 4.0</h1>
+         <img className="about-svg" src={IntroSvg} alt="about" />
+          <div className="text">
+            <h1 className="title">Industry 4.0</h1>
+            <p className="description">University of Waterloo's ... design team</p>
+          </div>
       </div>
 
       <div id="about-section">
         <br></br>
-        <h1 class="left-title">About Us</h1>
-        <h1 class="right-title">Our Mission</h1>
-        <h1 class="left-title">Our Vision</h1>
+        <div className="left-title description">
+          <h1>About Us</h1>
+        </div>
+        <div className="right-title description">
+          <h1>Our Mission</h1>
+        </div>
+        <div className="left-title description">
+          <h1>Our Vision</h1>
+        </div>
       </div>
      
     </div>
