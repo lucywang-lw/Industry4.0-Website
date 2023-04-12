@@ -1,58 +1,89 @@
-.links{
-    background: lightblue;
-    height: 200px;
-    width: 450px;
+.socials {
     display: flex;
-    font-family: 'Montserrat';
-    font-size: medium;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    row-gap: 15px;
+    margin: 5em auto;
 }
 
-div a:after{
-    content:"";
-    display:block;
-    height: 0;
-    width: 1px;
+.social {
+    margin-right: 1em;
+    margin-left: 1em;
+    flex: 0 0 auto;
+    border: solid rgb(227, 241, 255) 2px;
+    height: 3em;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.1);
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-head{
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 25px;
-    padding-left: 20px;
+.social:hover {
+    transform: scale(1.05);
 }
 
-.contact{
-    font-family: "Montserrat";
-    font-weight: 600;
+.icon {
+    color: #f4e7bf;
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.username {
+    font-size: 1em;
+    color: #F6D268;
+}
+
+.contact-page {
+    background: linear-gradient(157deg, rgba(145,162,232,1) 0%, rgb(95, 32, 189) 54%, rgba(63,2,152,1) 100%);
     text-align: center;
-}
-
-.text{
-    font-family: "Montserrat";
-    text-align: center;
-}
-
-.labels{
-    display:inline;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    font-size: large;
-    text-align: right;
 }
 
 .form-labels{
-    font-family: "Montserrat";
-    padding-left: 20px;
+    color: #F6D268;
+    margin-left: 0.75em;
     padding-top: 20px;
-    display:block
+    display:block;
+    text-align: start;
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+    font-weight: bold;
 }
 
 .form-input{
     padding: 10px;
-    width: 400px;
-    margin-left: 20px;
+    width: 100%;
     display:block;
     border-width: 1px;
     border-radius: 10px;
+    background-color: rgb(227, 241, 255);
+
+}
+
+.form-section {
+    margin-top: 7em;
+    padding-bottom: 10em;
+}
+
+.e-form {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.submit {
+    width: 7em;
+    height: 2em;
+    font-size: 1em;
+    margin-top: 2em;
+    border-radius: 10px;
+    background-color: #F6D268;
+    color: rgba(63,2,152,1);
+    font-weight: 300;
 }

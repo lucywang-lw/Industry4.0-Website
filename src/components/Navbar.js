@@ -19,7 +19,7 @@ function Navbar() {
     <nav className='navbar'>
         <div className='navbar-container'>
             <Link to='/' className='navbar-logo'>
-              <img class="logo" src={logoNoText} alt="logo" />
+              <img className="logo" src={logoNoText} alt="logo" />
             </Link>
             <i className='menu-icon fas fa-bars' onClick={toggleShow} />
             <ul id='nav-menu' className={click ? 'nav-menu active' : 'nav-menu'}>

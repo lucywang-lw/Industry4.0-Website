@@ -1,5 +1,5 @@
 import React from 'react'
-import "./contact.css"
+import "./Contact.css"
 
 
 const submission = (event) => {
@@ -8,8 +8,6 @@ const submission = (event) => {
   
 }
 function subform(){
-  
-
   return(
     <form onSubmit = {submission}>
       <label> name 
@@ -33,47 +31,56 @@ function subform(){
 
 function Contact() {
   return (
-    <>
-    <h1 class = "contact">Contact Us</h1>
-      <div class = "text"> Have a question about I4.0? Reach out to us through our socials. We'll be happy to answer!</div>
-      <h3 class = "social-head"><b>Socials</b></h3>
-      <div style = {{display: "inline"}}>
-        <div class = "links">
-          <div>
-            <a href = "https://www.youtube.com/watch?v=U3w0NjYbEIo"> 
-              <i className="fas fa fa-youtube-play fa-3x" style = {{color: "#dc143c", paddingLeft: "20px",paddingBottom: "15px" ,paddingTop: "8px"}}></i>
-              <p class = "labels">Youtube</p>
-            </a>
-            
-            <a href = "https://www.instagram.com/i4competition/"> 
-              <i className="fas fa fa-instagram fa-3x" style = {{color: "#f08080", paddingLeft: "26px"}}></i> 
-              <p class = "labels" style = {{paddingLeft: "26px"}}>Instagram</p>
-            </a>
-            
-            <a href = "https://www.gmail.com"> 
-              <i className="fas fa fa-google fa-3x" style = {{color: "#6495ed", paddingLeft: "25px",paddingTop: "17px"}}></i>
-              <p class = "labels" style = {{paddingLeft: "24px"}}>i4@gmail.com</p>
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        <form class = "e-form" onSubmit = {submission}>
-          <label class = "form-labels"> Name </label>
-          <input class = "form-input" type = "text"/>
+    <div className='contact-page'>
+      <br></br>
+    <h1 className="title">Contact Us</h1>
+      <h1>Socials</h1>
+      <div class="text-medium"> Have a question about I4.0? Reach out to us through our socials. We'll be happy to answer!</div>
 
-          <label class = "form-labels"> Email </label>
-          <input class = "form-input" type = "text"/>
+      <div className='socials'>            
+        <a className='social' href="https://www.instagram.com/i4competition/"> 
+          <i className="fas fa fa-instagram icon"></i> 
+          <span class="username">@i4competition</span>
+        </a>
+      
+        <a className='social' href="https://www.gmail.com"> 
+          <i className="fas fa fa-google icon"></i>
+          <span class="username">i4@gmail.com</span>
+        </a>
 
-          <label class = "form-labels"> Message </label>
-          <input class = "form-input" type = "text" style = {{paddingBottom: "50px"}}/>
+        <a className='social' href="https://www.gmail.com"> 
+          <i className="fas fa fa-google icon"></i>
+          <span class="username">i4@gmail.com</span>
+        </a>
+
+        <a className='social' href="https://www.gmail.com"> 
+          <i className="fas fa fa-google icon"></i>
+          <span class="username">i4@gmail.com</span>
+        </a>
+        <a className='social' href="https://www.gmail.com"> 
+          <i className="fas fa fa-google icon"></i>
+          <span class="username">i4@gmail.com</span>
+        </a>
+      </div>
+
+      <hr></hr>
+
+      <div className="form-section">
+        <h1>Send Us a Message</h1>
+        <form className= "e-form" onSubmit = {submission}>
+          <label className= "form-labels"> Name </label>
+          <input className= "form-input" type = "text"/>
+
+          <label className= "form-labels"> Email </label>
+          <input className= "form-input" type = "text"/>
+
+          <label className= "form-labels"> Message </label>
+          <input className= "form-input" type = "text" style = {{paddingBottom: "50px"}}/>
           
-          <input type = "submit" style = {{margin: "20px", padding: "10px",paddingRight:"50px",paddingLeft:"50px",textAlign:'center', backgroundColor:"lightgreen",borderRadius: "10px",color:'white',borderColor:'white'}}/>
-
+          <button className='submit' type="submit">Submit</button>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 
