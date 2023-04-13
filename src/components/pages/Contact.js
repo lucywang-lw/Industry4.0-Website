@@ -2,34 +2,35 @@ import React from 'react'
 import "./Contact.css"
 
 
-const submission = (event) => {
-  event.preventDefault();
-  alert('Done')
+// const submission = (event) => {
+//   event.preventDefault();
+//   alert('Done')
   
-}
-function subform(){
-  return(
-    <form onSubmit = {submission}>
-      <label> name 
-        <input type = "text"/>
-      </label>
-
-      <label> email 
-        <input type = "text"/>
-      </label>
-
-      <label> Message 
-        <input type = "text"/>
-      </label>
-      
-      <input type = "submit"/>
-
-    </form>
-  )
-}
-
+// }
 
 function Contact() {
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleName = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleMessage = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    alert(email + ' ' + message + ' ' + name);
+  };
+
   return (
     <div className='contact-page'>
       <br></br>
@@ -67,15 +68,15 @@ function Contact() {
 
       <div className="form-section">
         <h1>Send Us a Message</h1>
-        <form className= "e-form" onSubmit = {submission}>
+        <form className= "e-form" onSubmit={handleSubmit}>
           <label className= "form-labels"> Name </label>
-          <input className= "form-input" type = "text"/>
+          <input className= "form-input" type = "text" value={name} onChange={handleName}/>
 
           <label className= "form-labels"> Email </label>
-          <input className= "form-input" type = "text"/>
+          <input className= "form-input" type = "text" value={email} onChange={handleEmail}/>
 
           <label className= "form-labels"> Message </label>
-          <input className= "form-input" type = "text" style = {{paddingBottom: "50px"}}/>
+          <input className= "form-input" type = "text" value={message} onChange={handleMessage} style = {{paddingBottom: "50px"}}/>
           
           <button className='submit' type="submit">Submit</button>
         </form>
