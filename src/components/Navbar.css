@@ -23,7 +23,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: rgb(227, 241, 255);
   margin-left: 0px;
   cursor: pointer;
   text-decoration: none;
@@ -41,7 +41,7 @@
 }
 
 .nav-links {
-  color: rgb(255, 255, 255);
+  color: rgb(227, 241, 255);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -86,7 +86,7 @@
   }
 
   .menu-icon {
-    color: white;
+    color: rgb(227, 241, 255);
     display: block;
     position: absolute;
     top: 0;

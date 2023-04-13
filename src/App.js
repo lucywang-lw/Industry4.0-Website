@@ -6,6 +6,7 @@ import Team from './components/pages/Team';
 import Contact from './components/pages/Contact';
 import Faq from './components/pages/Faq';
 import Sponsors from './components/pages/Sponsors';
+import Footer from './components/Footer';
 
 function App() { 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
