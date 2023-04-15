@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5500, () => console.log("Server Running"));
 
-const trasnporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL,
@@ -27,23 +27,23 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const message = req.body.message; 
-    const mail = {
-      from: name,
-      to: process.env.EMAIL,
-      subject: "I4 Form Submission",
-      html: `<p>Name: ${name}</p>
-             <p>Email: ${email}</p>
-             <p>Message: ${message}</p>`,
-};
+  const name = req.body.name;
+  const email = req.body.email;
+  const message = req.body.message; 
+  const mail = {
+    from: name,
+    to: process.env.EMAIL,
+    subject: "I4 Form Submission",
+    html: `<p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>Message: ${message}</p>`,
+  };
 
-trasnporter.sendMail(mail, (error) => {
-      if (error) {
-        res.json({ status: "ERROR" });
-      } else {
-        res.json({ status: "Message Sent" });
-      }
-    });
+  transporter.sendMail(mail, (error) => {
+    if (error) {
+      res.json({ status: "ERROR" });
+    } else {
+      res.json({ status: "Message Sent" });
+    }
+  });
 });
