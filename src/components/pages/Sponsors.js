@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/keyboard';
 import toyota from '../images/toyota.png';
-import '../Sponsor.css';
+import './Sponsors.css';
   //list of faqs, mapped later
 const SponsorList = [
   {
@@ -42,29 +42,31 @@ const SponsorList = [
 function Sponsors() {
 return (
   <div className='swiper-background'>
-  <div className = "sponsor-subtitle">
-    Our Past Sponsors
-  </div>
-  <Swiper
-    navigation={true} 
-    modules={[Navigation]}  
-    slidesPerView={1}
-    breakpoints = {{  
-      1050 : {slidesPerView:2},
-    }}
-    loop = {true}
-  >
+    <br></br>
+    <h1 className = "title">
+      Our Past Sponsors
+    </h1>
 
-{SponsorList.map((sponsor,index) => {
-  return (
-    <SwiperSlide className = "slide">
-      <SponsorItem id= {index} name = {sponsor.name} image = {sponsor.image} text = {sponsor.text}/>
-      <img src = {sponsor.image} className = "swiper-image"/>
-      <p>{sponsor.text}</p>
-    </SwiperSlide>
-  )
-  } ) } 
-  </Swiper>
+    <Swiper
+      className='swiper'
+      navigation={true} 
+      modules={[Navigation]}  
+      slidesPerView={1}
+      breakpoints = {{  
+        1050 : {slidesPerView:2},
+      }}
+      loop = {true}
+    >
+      {SponsorList.map((sponsor,index) => {
+        return (
+          <SwiperSlide className = "slide">
+            <SponsorItem id= {index} name = {sponsor.name} image = {sponsor.image} text = {sponsor.text}/>
+            <img src = {sponsor.image} className = "swiper-image"/>
+            <p className='description'>{sponsor.text}</p>
+          </SwiperSlide>
+        )
+      })} 
+    </Swiper>
   </div>
   )
 }

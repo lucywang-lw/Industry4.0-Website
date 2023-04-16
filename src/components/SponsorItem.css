@@ -1,36 +1,24 @@
-.swiper-background {
-  background-color: #ececec;
-}
 .swiper-button-next, .swiper-button-prev {
   text-rendering: auto;
-}
-.swiper-slide.slide{
-  display: inline;    
 }
 .sponsor-subtitle{
   text-align: center;
   padding-bottom: 8%;
 }
 .swiper-image {
-  height:300px;
-  border-radius: 20px;
-  max-width: 500px;
-  padding-left: 20%;
+  width: 75%;
+  display: flex;
+  margin: 0 auto !important;
 }
 .sponsor-subtitle{
   background-color: none;
   font-size: 50px;
   font-weight: bolder;
-  color: #fd5e53;
 }
-h1 {
-  color: #000814;
-  font-size: 50px;
-}
-p {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
+.sponsor-name {
+  color: rgb(227, 241, 255);
+  font-size: 2.5em;
+  margin-bottom: -1em;
 }
 .swiper-pagination-bullet {
   background-color: #fd5e53 !important;
@@ -38,11 +26,5 @@ p {
 }
 .swiper-button-next::after, .swiper-button-prev::after  {
   padding: 20px;
-  color: #fd5e53;
-}
-@media only screen and (max-width: 450px) {
-
-  .p {
-    font-size: 20px;
-  }
+  color: rgb(227, 241, 255);
 }

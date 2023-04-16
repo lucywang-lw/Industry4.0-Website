@@ -1,0 +1,18 @@
+.swiper-background {
+    background: linear-gradient(157deg, rgba(145,162,232,1) 0%, rgb(95, 32, 189) 54%, rgba(63,2,152,1) 100%);
+    min-height: 90vh;
+}
+
+.description {
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.swiper {
+    margin-top: 5em;
+    width: 80%;
+    display: flex;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 20px;
+}
