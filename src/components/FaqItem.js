@@ -5,7 +5,7 @@ import './FaqItem.css'
 
 function Faqitem({ faq, index, faqtoggle }) {
   return (
-    <div className = { "test faq " + (faq.open ? 'faqopen': 'faqclosed')} 
+    <div className = { "faq " + (faq.open ? 'faqopen': 'faqclosed')} 
           onClick={() => faqtoggle(index)}>
       <div className = "faq-heading">
         {faq.heading}
@@ -13,9 +13,7 @@ function Faqitem({ faq, index, faqtoggle }) {
          <FontAwesomeIcon icon={faq.open ? faAngleUp : faAngleDown} />
         </span>
       </div>
-      <div className = "faq-answer">
-        {faq.answer}
-      </div>
+      {faq.open && <div className = "faq-answer">{faq.answer}</div>}
   </div>
   );
 }

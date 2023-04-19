@@ -5,38 +5,38 @@ function Faq() {
   //list of faqs, mapped later
   const [faqs, faqstate] = useState([
       {
-        heading: "question 1",
-        answer: "I4 IS A COMPETETION DESIGN TEAM AT THE UNIVERSITY OF WATERLOO MORE TEXT MORE TEXT MORE TEXT",
+        heading: "Where is the competition hosted?",
+        answer: "The competition is based out of Waterloo but is run virtually, on Slack. Teams will participate at their own high schools.",
         open: false
       },
       {
-        heading: "question 2",
-        answer: "I4 IS A COMPETETION DESIGN TEAM AT THE UNIVERSITY OF WATERLOO MORE TEXT MORE TEXT MORE TEXT",
+        heading: "How many people can be on a team?",
+        answer: "Teams of 4 are recommended, but teams can have 3-5 members.",
         open: false
       },
       {
-        heading: "question 3",
-        answer: "I4 IS A COMPETETION DESIGN TEAM AT THE UNIVERSITY OF WATERLOO MORE TEXT MORE TEXT MORE TEXT",
+        heading: " Can a school have more than one team?",
+        answer: "Yes, provided the teams do not share information or work together in any way.",
         open: false
       },
       {
-        heading: "question 4",
-        answer: "TESTTESTTESTTESTTESTTESTTESTTESTTEST",
+        heading: "What skills will I gain from this competition?",
+        answer: "This competition focuses on process improvement through data analytics. It provides an opportunity to develop your problem solving, analytical, Excel, and data analysis skills, among others.",
         open: false
       },
       {
-        heading: "question 5",
-        answer: "TESTTESTTESTTESTTESTTESTTESTTESTTEST",
+        heading: " Is there a registration fee?",
+        answer: "No, there are no participation fees!",
         open: false
       },
       {
-        heading: "question 6",
-        answer: "TESTTESTTESTTESTTESTTESTTESTTESTTEST",
+        heading: "Is there a prize?",
+        answer: "Yes! The winners will recieve a prize, however, the exact prizing is to be determined.",
         open: false
       },
       {
-        heading: "question 7",
-        answer: "TESTTESTTESTTESTTESTTESTTESTTESTTEST",
+        heading: "I am a student, how do I sign my team up?",
+        answer: "In order to sign up, you will need a teacher to be your advisor. First, they will have to fill out this form (coming soon). Then, they will receive an email in the coming weeks which will include a detailed sign up form for each team.",
         open: false
       },
   ])

@@ -1,12 +1,11 @@
 .faq-heading {
     color: rgb(227, 241, 255);
     font-size: 1.5em;
-    width: 80%;
+    width: 90%;
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 3em;
-    margin: auto;
+    padding: 1em;
     align-items: center;
 }
 
@@ -18,7 +17,6 @@
     border: solid rgb(227, 241, 255) 2px;
     margin: auto;
     border-radius: 10px;
-    height: 5em;
     background-color: rgba(255,255,255,0.1);
     transition: all 0.5s ease;
 }
@@ -28,36 +26,18 @@
     cursor: pointer;
 }
 
-.faqopen {
-    border-radius: 10px;
-    height: 10em;
-}
-
 .faqopen .faq-answer {
-    opacity: 1;
-    max-height: 100%;
-    height: 5em;
-    width: 80%;
-    margin: auto;
+    width: 90%;
     padding-bottom: 1em;
     transition: all 0.5s ;
     transition-delay: 0.2s;
-}
-
-.faqopen .faq-answer {
-    opacity: 1;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 1em;
-    transition: all 0.5s;
-    transition-delay: 0.2s;
-}
-.faqclosed .faq-answer {
-    opacity: 0;
 }
 
 .faq-answer {
     color: rgb(227, 241, 255);
     margin-bottom: 0.5em;
     overflow-wrap: break-word;
+    font-size: 1.2em;
+    width: 100%;
+    margin-left: 1.5em; 
 }

@@ -1,12 +1,13 @@
 .faq-page {
   background: linear-gradient(157deg, rgba(145,162,232,1) 0%, rgb(95, 32, 189) 54%, rgba(63,2,152,1) 100%);
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 h1 {
   display: flex;
   justify-content: center;
 }
+
 .faq-components {
   margin: auto;
   width: 80%;
@@ -25,4 +26,3 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 }
- 
