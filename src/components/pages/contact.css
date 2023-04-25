@@ -10,12 +10,15 @@
 .social {
     margin-right: 1em;
     margin-left: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
     flex: 0 0 auto;
     border: solid rgb(227, 241, 255) 2px;
     height: 3em;
     border-radius: 30px;
     background-color: rgba(255,255,255,0.1);
-    width: 15em;
+    min-width: 12em;
+    max-width: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +81,7 @@ a {
 }
 
 .submit {
-    width: 7em;
+    width: 10em;
     height: 2em;
     font-size: 1em;
     margin-top: 2em;
@@ -86,4 +89,8 @@ a {
     background-color: #F6D268;
     color: rgba(63,2,152,1);
     font-weight: 300;
+}
+
+.submit:hover {
+    cursor: not-allowed;
 }

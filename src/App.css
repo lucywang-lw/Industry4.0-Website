@@ -19,6 +19,7 @@ h1 {
 }
 
 .text-medium {
+  font-size: 1.3em;
   text-align: center;
   color: rgb(227, 241, 255);
 }

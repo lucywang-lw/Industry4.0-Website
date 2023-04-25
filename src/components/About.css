@@ -1,16 +1,20 @@
+#about-page {
+    min-height: 100vh;
+}
+
 #intro-section {
     background: linear-gradient(157deg, rgba(36,2,87,1) 0%, rgba(63,2,152,1) 52%, rgba(145,162,232,1) 100%);
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-svg {
-    display: flex;
     align-items: flex-start;
     width: 35em;
-    margin-right: 200px;
+    margin-right: 10em;
 }
 
 .text {
@@ -19,25 +23,49 @@
     align-items: flex-end;
 }
 
-.description {
-    font-size: 1em;
+.blurb {
+    width: 35em;
+    color: rgb(49, 49, 49);
+}
+
+.about-description {
+    font-size: 1.5em;
+    width: 30em;
     color: #F6D268;
+    text-align: end;
+}
+
+.about-desc {
+    margin: 5em;
+    font-size: 1.5em;
+    width: 35em;
+}
+
+.about-desc h1 {
+    margin-top: 1em;
 }
 
 #about-section {
-    background: white;
-    height: 50em;
+    background: rgb(255, 253, 252);
     align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 }
 
 #about-section h1 {
     color:  rgba(63,2,152,1);
-    margin-top: 150px;
 }
 
 #about-section p {
     font-size: 1em;
+}
+
+.desc-svg {
+    margin: 7em;
+    width: 30em;
 }
 
 .left-title {

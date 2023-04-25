@@ -34,10 +34,11 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 5em;
   list-style: none;
-  width: 80%;
+  width: 100%;
   justify-content: end;
+  align-items: center;
 }
 
 .nav-links {

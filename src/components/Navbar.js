@@ -34,11 +34,11 @@ function Navbar() {
                   Team
                 </Link>
               </li>
-              <li className='nav-item'>
+              { /* <li className='nav-item'>
                 <Link to='/sponsors' className='nav-links' onClick={closeMenu}>
                   Sponsors
                 </Link>
-              </li>
+              </li> */ }
               <li className='nav-item'>
                 <Link to='/faq' className='nav-links' onClick={closeMenu}>
                   FAQ

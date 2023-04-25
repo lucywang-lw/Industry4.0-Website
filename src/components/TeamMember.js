@@ -2,7 +2,6 @@ import React from 'react'
 import "./TeamMember.css"
 
 function TeamMember(props) {
-  console.log(props);
   return (
     <div className="teamcard">
         <img className="team-img" src={props.image.image} alt={props.image.desc} />

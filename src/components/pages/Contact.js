@@ -52,23 +52,23 @@ function Contact() {
           <span className="username">@i4competition</span>
         </a>
       
-        <a className='social' href="https://www.gmail.com"> 
-          <i className="fas fa fa-google icon"></i>
-          <span className="username">i4@gmail.com</span>
+        <a className='social' href="https://www.linkedin.com/company/i4competition/"> 
+          <i class="fa-brands fa-linkedin-in icon"></i>
+          <span className="username">i4competition</span>
         </a>
 
-        <a className='social' href="https://www.gmail.com"> 
-          <i className="fas fa fa-google icon"></i>
-          <span className="username">i4@gmail.com</span>
+        <a className='social' href="mailto: industry4team@uwaterloo.ca"> 
+          <i class="fa-regular fa-envelope icon"></i>
+          <span className="username">industry4team@uwaterloo.ca</span>
         </a>
 
-        <a className='social' href="https://www.gmail.com"> 
-          <i className="fas fa fa-google icon"></i>
-          <span className="username">i4@gmail.com</span>
+        <a className='social' href="https://discord.gg/8b5PyAfC"> 
+        <i class="fa-brands fa-discord icon"></i>
+          <span className="username">discord.gg/8b5PyAfC</span>
         </a>
-        <a className='social' href="https://www.gmail.com"> 
-          <i className="fas fa fa-google icon"></i>
-          <span className="username">i4@gmail.com</span>
+        <a className='social' href="https://www.i4competition.ca/"> 
+          <i class="fa-solid fa-link icon"></i>        
+          <span className="username">Previous Website</span>
         </a>
       </div>
 
@@ -78,15 +78,16 @@ function Contact() {
         <h1>Send Us a Message</h1>
         <form className= "e-form" onSubmit={handleSubmit}>
           <label className= "form-labels"> Name </label>
-          <input className= "form-input" type = "text" value={name} onChange={handleName} required />
+          <input disabled className= "form-input" type = "text" value={name} onChange={handleName} required />
 
           <label className= "form-labels"> Email </label>
-          <input className= "form-input" type = "text" value={email} onChange={handleEmail} required />
+          <input disabled className= "form-input" type = "text" value={email} onChange={handleEmail} required />
 
           <label className= "form-labels"> Message </label>
-          <input className= "form-input" type = "text" value={message} onChange={handleMessage} style = {{paddingBottom: "50px"}} required />
+          <input disabled className= "form-input" type = "text" value={message} onChange={handleMessage} style = {{paddingBottom: "50px"}} required />
           
-          <button className='submit' type="submit">{status}</button>
+          {/* <button className='submit' type="submit">{status}</button> */}
+          <button className='submit' type="submit" disabled>Coming Soon</button>
         </form>
       </div>
     </div>
