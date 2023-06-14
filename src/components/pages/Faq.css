@@ -8,9 +8,15 @@ h1 {
   justify-content: center;
 }
 
+.faq-title {
+  padding-top: 2em;
+  width: 70%;
+  margin: auto;
+}
+
 .faq-components {
   margin: auto;
-  width: 80%;
+  width: 70%;
   display: grid;
   grid-column-gap: 1.5em;
   grid-row-gap: 3em;

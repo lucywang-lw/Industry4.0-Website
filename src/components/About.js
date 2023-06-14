@@ -11,23 +11,25 @@ function About() {
         <img className="about-svg" src={IntroSvg} alt="about" />
         <div className="text">
           <h1 className="title">Industry 4.0</h1>
-          <p className="about-description">High-school level data-driven competition run by students at the University of Waterloo</p>
+          <p className="about-description">Management Engineering conferences run by students at the University of Waterloo</p>
         </div>
       </div>
 
       <div id="about-section">
-        <br></br>
         <div className="about-desc">
           <h1>About Us</h1>
           <div className='blurb'>
-          The I4 challenge is a high school level data-driven competition run by students at the University of Waterloo. The name comes from what is known as the fourth industrial revolution, involving the computerization of manufacturing and increase in big data and analytics.
+          I4 designs case competitions and conferences geared towards Management Engineering Concepts. We achieve this through education, mentorship, and application (for execs).
+          The name comes from what is known as the fourth industrial revolution, involving the computerization of manufacturing and increase in big data and analytics.
           </div>
         </div>
         <img className="desc-svg" src={TeamSvg} alt="about" />
         <img className="desc-svg" src={AnalysisSvg} alt="about" />
         <div className="about-desc">
           <h1>Our Mission</h1>
-          <div className='blurb'> To provide access and resources to the University of Waterloo about Management Engineering, extend awareness of Management Engineering amongst the faculties, and improve high school outreach. </div>
+          <div className='blurb'> To provide access to resources in a hands-on learning environment about Management Engineering, promote awareness of Management Engineering amongst the faculties, and improve outreach.
+“Preparing Students for Industry 4.0”
+ </div>
         </div>
       </div>
      

@@ -33,12 +33,7 @@ function Faq() {
         heading: "Is there a prize?",
         answer: "Yes! The winners will recieve a prize, however, the exact prizing is to be determined.",
         open: false
-      },
-      {
-        heading: "I am a student, how do I sign my team up?",
-        answer: "In order to sign up, you will need a teacher to be your advisor. First, they will have to fill out this form (coming soon). Then, they will receive an email in the coming weeks which will include a detailed sign up form for each team.",
-        open: false
-      },
+      }
   ])
   //changes the open state of faq component, loops through list of faqs using reactstate
   const faqtoggle = index => {
@@ -56,7 +51,7 @@ function Faq() {
   return (
     <div className='faq-page'>
       <br></br>
-      <h1 className='title'>Frequently Asked Questions</h1>
+      <h1 className='title faq-title'>Frequently Asked Questions</h1>
       <div className = "faq-components">
         {faqs.map((faq, index) => (
           <div key={index}>

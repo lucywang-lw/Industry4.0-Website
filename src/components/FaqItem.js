@@ -13,7 +13,7 @@ function Faqitem({ faq, index, faqtoggle }) {
          <FontAwesomeIcon icon={faq.open ? faAngleUp : faAngleDown} />
         </span>
       </div>
-      {faq.open && <div className = "faq-answer">{faq.answer}</div>}
+     <div className = {"faq-answer " + (faq.open ? 'faq-open': 'faq-closed')}>{faq.answer}</div>
   </div>
   );
 }

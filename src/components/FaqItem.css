@@ -5,12 +5,13 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1.5em;
     align-items: center;
 }
 
 .faq-arrow {
     color: rgb(227, 241, 255); 
+    margin-right: 15px;
 }
 
 .faq {
@@ -20,14 +21,7 @@
     background-color: rgba(255,255,255,0.1);
     transition: all 5s ease;
     transition: hover 0.5s;
-}
-
-.faq.faqclosed {
-    max-height: 5em;
-}
-
-.faq.faqopen {
-    max-height: 1000px;
+    min-height: 6em;
 }
 
 .faq:hover{
@@ -35,23 +29,26 @@
     cursor: pointer;
 }
 
-.faqopen .faq-answer {
-    width: 90%;
-    padding-bottom: 1em;
-    transition: all 5s ;
-    transition-delay: 6s;
-}
-
-.faqclosed.faq-answer{
-    height: 0;
-    overflow: hidden;
-}
-
 .faq-answer {
+    overflow: hidden;
     color: rgb(227, 241, 255);
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     overflow-wrap: break-word;
     font-size: 1.2em;
-    width: 100%;
-    margin-left: 1.5em; 
+    max-width: 90%;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.faq-closed {
+    max-height: 0px;
+    height: 0px;
+    margin: 0px;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.faq-open {
+    max-height: 10em !important;
+    transition: max-height 0.4s ease-in-out;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }

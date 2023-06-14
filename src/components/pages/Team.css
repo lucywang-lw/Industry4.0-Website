@@ -24,6 +24,7 @@
     justify-content: center;
     width: 15em;
     margin: auto;
+    max-height: 350px;
 }
 
 .description {

@@ -5,40 +5,43 @@
 #intro-section {
     background: linear-gradient(157deg, rgba(36,2,87,1) 0%, rgba(63,2,152,1) 52%, rgba(145,162,232,1) 100%);
     min-height: calc(100vh - 70px);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    column-gap: 5%;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    padding: 50px;
 }
 
 .about-svg {
     align-items: flex-start;
-    width: 35em;
-    margin-right: 10em;
+    max-width: 80%;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: end;
 }
 
 .blurb {
-    width: 35em;
+    width: 60%;
     color: rgb(49, 49, 49);
+    margin: auto;
+    text-align: center;
 }
 
 .about-description {
     font-size: 1.5em;
     width: 30em;
     color: #F6D268;
-    text-align: end;
+    width: 90%;
 }
 
 .about-desc {
-    margin: 5em;
     font-size: 1.5em;
-    width: 35em;
+    max-width: 100%;
 }
 
 .about-desc h1 {
@@ -49,10 +52,11 @@
     background: rgb(255, 253, 252);
     align-items: center;
     min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
     justify-content: center;
+    margin: 5em auto;
 }
 
 #about-section h1 {
@@ -64,8 +68,8 @@
 }
 
 .desc-svg {
-    margin: 7em;
-    width: 30em;
+    max-width: 60%;
+    margin: auto;
 }
 
 .left-title {
@@ -80,4 +84,63 @@
 
 .description {
     max-width: 600px;
+}
+
+@media screen and (max-width: 400px) {
+    .about-desc {
+        width: 60%;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        width: 60%;
+    }
+
+    .about-svg {
+        width:60%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1150px) {
+    .text {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        width: 80%
+    }
+
+    .about-svg {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    #about-section {
+        grid-template-columns: auto;
+    }
+    
+    .about-desc {
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .desc-svg {
+        display: none;
+    }
+
+    .title {
+        margin-bottom: 0px;
+    }
+
+    .blurb {
+        max-width: 100%;
+    }
 }
