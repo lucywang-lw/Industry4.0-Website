@@ -74,21 +74,21 @@ const rnd = [
 ]
 
 const pastteam = [
-  { image: allison, name: "Allison", role: "?"},
-  { image: Aniq, name: "Aniq", role: "R&D Lead"},
-  { image: Carina, name: "Carina", role: "?"},
-  { image: jovina, name: "Jovina", role: "?"},
-  { image: Michaela_Trevisan, name: "Michaela", role: "?"},
-  { image: michelle, name: "Michelle", role: "?"},
-  { image: Omkaar, name: "Omkaar", role: "Marketing Lead"},
+  { image: allison, name: "Allison", role: ""},
+  { image: Aniq, name: "Aniq Premji", role: "R&D Lead"},
+  { image: Carina, name: "Carina", role: ""},
+  { image: jovina, name: "Jovina", role: ""},
+  { image: Michaela_Trevisan, name: "Michaela", role: ""},
+  { image: michelle, name: "Michelle", role: ""},
+  { image: Omkaar, name: "Omkaar Kamath", role: "Marketing Lead"},
   { image: Prithika_Hariharan, name: "Prithika", role: "?"},
-  { image: Rodrigo, name: "Rodrigo", role: "Director"},
-  { image: Sammi, name: "Sammi", role: "R&D Lead"},
-  { image: Sanjenah, name: "Sanjenah", role: "PR Lead"},
-  { image: Simran, name: "Simran", role: "?"},
-  { image: Suhayl, name: "Suhayl", role: "Director"},
-  { image: sunil, name: "Sunil", role: "?"},
-  { image: zuhayr, name: "Zuhayr", role: "?"},
+  { image: Rodrigo, name: "Rodrigo Tiscareno", role: "Director"},
+  { image: Sammi, name: "Sammi Szeto", role: "R&D Lead"},
+  { image: Sanjenah, name: "Sanjenah Visagan", role: "PR Lead"},
+  { image: Simran, name: "Simran", role: ""},
+  { image: Suhayl, name: "Suhayl Sayed", role: "Director"},
+  { image: sunil, name: "Sunil", role: ""},
+  { image: zuhayr, name: "Zuhayr", role: ""},
 ]
 
 
