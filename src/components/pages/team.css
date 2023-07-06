@@ -1,0 +1,22 @@
+.prfl_img{
+    align-items: center;
+    border: 5px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border: 5px;
+    border-color: azure;
+}
+
+.profile{
+    border: 1px;
+    fill: blue;
+}
+
+.info{
+    width: 250px;
+    text-align: center;
+
+}
