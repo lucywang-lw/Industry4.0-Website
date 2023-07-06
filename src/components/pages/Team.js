@@ -21,6 +21,24 @@ import matthew from '../../resources/team/matthew.jpeg'
 import saanika from '../../resources/team/saanika.jpeg'
 import aithy from '../../resources/team/aithy.png'
 
+import allison from '../../resources/oldteam/allison-headshot.png'
+import Aniq from '../../resources/oldteam/Aniq.jpg'
+import Carina from '../../resources/oldteam/Carina_Headshot.png'
+import jovina from '../../resources/oldteam/jovina.png'
+import Michaela_Trevisan from '../../resources/oldteam/Michaela_Trevisan.png'
+import Omkaar from '../../resources/oldteam/Omkaar.jpg'
+import Prithika_Hariharan from '../../resources/oldteam/Prithika_Hariharan.png'
+import Rodrigo from '../../resources/oldteam/Rodrigo_Headshot.jpg'
+import Sammi from '../../resources/oldteam/Sammi.jpg'
+import Sanjenah from '../../resources/oldteam/Sanjenah_Headshot.jpg'
+import Simran from '../../resources/oldteam/SimranDhillon.png'
+import Suhayl from '../../resources/oldteam/Suhayl_Headshot.jpg'
+import sunil from '../../resources/oldteam/sunil_headshot.png'
+import zuhayr from '../../resources/oldteam/zuhayr_headshot.png'
+import michelle from '../../resources/oldteam/Michelle_headshot.png'
+
+
+
 const directorship = [
   { image: adriel, name: "Adriel De Vera", role: "Team Director"},
   { image: anastan, name: "Anastan Gnanapragasam", role: "Competition Director"},
@@ -54,6 +72,25 @@ const rnd = [
   { image: saanika, name: "Saanika Sharma", role: "R&D Exec"},
   { image: aithy, name: "Aithy Nguyen", role: "Product Manager Exec"},
 ]
+
+const pastteam = [
+  { image: allison, name: "Allison", role: "?"},
+  { image: Aniq, name: "Aniq", role: "R&D Lead"},
+  { image: Carina, name: "Carina", role: "?"},
+  { image: jovina, name: "Jovina", role: "?"},
+  { image: Michaela_Trevisan, name: "Michaela", role: "?"},
+  { image: michelle, name: "Michelle", role: "?"},
+  { image: Omkaar, name: "Omkaar", role: "Marketing Lead"},
+  { image: Prithika_Hariharan, name: "Prithika", role: "?"},
+  { image: Rodrigo, name: "Rodrigo", role: "Director"},
+  { image: Sammi, name: "Sammi", role: "R&D Lead"},
+  { image: Sanjenah, name: "Sanjenah", role: "PR Lead"},
+  { image: Simran, name: "Simran", role: "?"},
+  { image: Suhayl, name: "Suhayl", role: "Director"},
+  { image: sunil, name: "Sunil", role: "?"},
+  { image: zuhayr, name: "Zuhayr", role: "?"},
+]
+
 
 function Team() {
   return (
@@ -125,6 +162,21 @@ function Team() {
           <div className="dept-pictures">
             {
               marketing.map(photo => {
+                return (
+                  <div className="member">
+                    <TeamMember id={photo.name} image={photo} />
+                  </div>
+                )
+              })
+            }
+          </div>
+          <hr></hr>
+      </div>
+      <div className="department">
+          <h1>Past Team Members</h1>
+          <div className="dept-pictures">
+            {
+              pastteam.map(photo => {
                 return (
                   <div className="member">
                     <TeamMember id={photo.name} image={photo} />
