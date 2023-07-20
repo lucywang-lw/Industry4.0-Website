@@ -81,7 +81,7 @@ const pastteam = [
   { image: Michaela_Trevisan, name: "Michaela", role: ""},
   { image: michelle, name: "Michelle", role: ""},
   { image: Omkaar, name: "Omkaar Kamath", role: "Marketing Lead"},
-  { image: Prithika_Hariharan, name: "Prithika", role: "?"},
+  { image: Prithika_Hariharan, name: "Prithika", role: ""},
   { image: Rodrigo, name: "Rodrigo Tiscareno", role: "Director"},
   { image: Sammi, name: "Sammi Szeto", role: "R&D Lead"},
   { image: Sanjenah, name: "Sanjenah Visagan", role: "PR Lead"},
