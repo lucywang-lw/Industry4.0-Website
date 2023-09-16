@@ -33,7 +33,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 5em;
   list-style: none;
   width: 100%;
@@ -58,7 +58,7 @@
     display: none;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1250px) {
   .nav-menu {
     display: none;
   }
@@ -81,7 +81,7 @@
 
   .nav-links {
     font-size: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.05rem;
     text-align: center;
     display: table;
   }
