@@ -94,5 +94,5 @@ a {
 }
 
 .submit:hover {
-    cursor: not-allowed;
+    cursor: pointer;
 }

@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
-import "./contact.css"
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
+import "./Contact.css"
 
 function Contact() {
   const [status, setStatus] = useState("Submit");
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
+
+  const form = useRef();
 
   const handleEmail = (event) => {
     setEmail(event.target.value);
@@ -27,16 +30,24 @@ function Contact() {
       email: email,
       message: message,
     };
-    let response = await fetch("http://localhost:5500/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
+    // let response = await fetch("http://localhost:5500/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json;charset=utf-8",
+    //   },
+    //   body: JSON.stringify(details),
+    // });
+
+    emailjs.sendForm('service_ay58cne', 'template_vxq9ieb', form.current, 'E8Sk6_i4AndGy7lpT')
+    .then((result) => {
+      alert("Sent successfully");
+    }, (error) => {
+      alert("Oops, please try again");
     });
+
+
     setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    // let result = await response.json();
   };
 
   return (
@@ -76,18 +87,18 @@ function Contact() {
 
       <div className="form-section">
         <h1>Send Us a Message</h1>
-        <form className= "e-form" onSubmit={handleSubmit}>
+        <form ref={form} className= "e-form" onSubmit={handleSubmit}>
           <label className= "form-labels"> Name </label>
-          <input disabled className= "form-input" type = "text" value={name} onChange={handleName} required />
+          <input name="from_name" className= "form-input" type = "text" value={name} onChange={handleName} required />
 
           <label className= "form-labels"> Email </label>
-          <input disabled className= "form-input" type = "text" value={email} onChange={handleEmail} required />
+          <input name="from_email" className= "form-input" type = "text" value={email} onChange={handleEmail} required />
 
           <label className= "form-labels"> Message </label>
-          <input disabled className= "form-input" type = "text" value={message} onChange={handleMessage} style = {{paddingBottom: "50px"}} required />
+          <input name="message" className= "form-input" type = "text" value={message} onChange={handleMessage} style = {{paddingBottom: "50px"}} required />
           
-          {/* <button className='submit' type="submit">{status}</button> */}
-          <button className='submit' type="submit" disabled>Coming Soon</button>
+          <button className='submit' type="submit">{status}</button>
+          {/* <button className='submit' type="submit" disabled>Coming Soon</button> */}
         </form>
       </div>
     </div>

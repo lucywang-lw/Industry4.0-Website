@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact';
 import Faq from './components/pages/Faq';
 import Sponsors from './components/pages/Sponsors';
 import Footer from './components/Footer';
+import Events from './components/pages/Events';
 
 function App() { 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path= "/initiatives" element={<Events />}/>
       </Routes>
       <Footer />
     </Router>
