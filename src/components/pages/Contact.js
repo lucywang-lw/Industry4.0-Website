@@ -25,11 +25,11 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    let details = {
-      name: name,
-      email: email,
-      message: message,
-    };
+    // let details = {
+    //   name: name,
+    //   email: email,
+    //   message: message,
+    // };
     // let response = await fetch("http://localhost:5500/contact", {
     //   method: "POST",
     //   headers: {
