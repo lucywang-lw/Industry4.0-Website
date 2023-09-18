@@ -30,9 +30,9 @@ const SponsorList = [
     text: "Toyota is a Japanese multinational automotive manufacturer that strives to deliver quality automotive products all around the world",
   },
   {
-    name: "Majik",
+    name: "MAJiK",
     image: majik,
-    text: "details about the sponsor here",
+    text: "MAJiK systems connects to equipment controls to monitor, analyze, and optimize manufacturing operations.",
   },
   {
     name: "UWaterloo Management Sciences",
