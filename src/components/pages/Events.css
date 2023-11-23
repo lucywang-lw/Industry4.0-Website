@@ -22,8 +22,7 @@ img {
  margin-left: 60px;
  text-align: left;
  color:white;
- right: 100px;
- bottom: -40px;
+ right: 20px;
  position: relative;
  border-radius: 2px;
  box-shadow: 1px 5px 6px 4px rgb(244, 237, 237);
@@ -64,9 +63,15 @@ h1 {
   .t h2 {
     text-decoration: underline;
   }
+  p{
+    margin:0px;
+  }
  }
  @media screen and (max-width:700px) {
   img{
     max-width: 250px;
+  }
+  p{
+    margin:0px;
   }
   }
