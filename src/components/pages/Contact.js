@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 import "./Contact.css"
 
 function Contact() {
@@ -38,12 +38,12 @@ function Contact() {
     //   body: JSON.stringify(details),
     // });
 
-    emailjs.sendForm('service_ay58cne', 'template_vxq9ieb', form.current, 'E8Sk6_i4AndGy7lpT')
+    /*emailjs.sendForm('service_ay58cne', 'template_vxq9ieb', form.current, 'E8Sk6_i4AndGy7lpT')
     .then((result) => {
       alert("Sent successfully");
     }, (error) => {
       alert("Oops, please try again");
-    });
+    });*/
 
 
     setStatus("Submit");
