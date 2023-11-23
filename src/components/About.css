@@ -60,6 +60,11 @@
     margin: 5em auto;
 }
 
+#FAQ {
+    background: linear-gradient(157deg, rgba(36,2,87,1) 0%, rgba(63,2,152,1) 52%, rgba(145,162,232,1) 100%);
+}
+
+
 #about-section h1 {
     color:  rgba(63,2,152,1);
 }

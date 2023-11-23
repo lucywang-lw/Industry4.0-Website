@@ -35,16 +35,6 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/sponsors' className='nav-links' onClick={closeMenu}>
-                  Sponsors
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/faq' className='nav-links' onClick={closeMenu}>
-                  FAQ
-                </Link>
-              </li>
-              <li className='nav-item'>
                 <Link to='/Initiatives' className='nav-links' onClick={closeMenu}>
                   Initiatives
                 </Link>
@@ -60,5 +50,17 @@ function Navbar() {
   
   )
 }
+
+/* spons and faq nav bar
+<li className='nav-item'>
+<Link to='/sponsors' className='nav-links' onClick={closeMenu}>
+Sponsors
+</Link>
+</li>
+<li className='nav-item'>
+<Link to='/faq' className='nav-links' onClick={closeMenu}>
+FAQ
+</Link>
+</li> */
 
 export default Navbar
